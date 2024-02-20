@@ -13,8 +13,8 @@ def index():
 def main():
   global r,first_time
   if first_time==1:
-  r = request.form.get("r")
-  first_time =0
+    r = request.form.get("r")
+    first_time =0
   return(render_template("main.html",r=r))
 
 @app.route("/image_gpt",methods=["GET","POST"])
