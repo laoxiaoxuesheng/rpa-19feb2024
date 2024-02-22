@@ -60,7 +60,7 @@ def image_result():
     )
     time.sleep(10)
     return(render_template("image_result.html",r=r[0]))
-##############################################################################################################
+    
 @app.route("/transcribe_gpt",methods=["GET","POST"])
 def transcribe_gpt():
     return(render_template("transcribe_gpt.html"))
@@ -79,8 +79,8 @@ def transcribe_result():
     }
 )
     time.sleep(10)
-    return(render_template("transcribe_result.html",r=r[0]))
-###########################################################################
+    return(render_template("transcribe_result.html",r=r))
+    
 @app.route("/end",methods=["GET","POST"])
 def end():
     global first_time,r
