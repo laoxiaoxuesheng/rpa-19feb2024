@@ -76,8 +76,8 @@ def transcribe_result():
         "timestamp": "chunk",
         "batch_size": 32,
         "diarise_audio": False
-    }
-)
+        }
+    )
     time.sleep(10)
     return(render_template("transcribe_result.html",r=r))
     
