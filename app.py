@@ -72,10 +72,10 @@ def transcribe_result():
     input={
         "task": "transcribe",
         "audio": q,
-        "language": "english",
+        "language": "None",
         "timestamp": "chunk",
         "batch_size": 32,
-        "diarise_audio": False
+        "diarise_audio": False,
         }
     )
     time.sleep(10)
