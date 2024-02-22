@@ -95,12 +95,12 @@ def transcribe_result():
         "task": "transcribe",
         "audio": q,
         "language": "english",
-        "timestamp": "word",
+        "timestamp": "chunk",
         "batch_size": 64,
         "diarise_audio": False,
         }
     )
-    time.sleep(20)
+    time.sleep(15)
     return(render_template("transcribe_result.html",r=r))
     
 @app.route("/end",methods=["GET","POST"])
